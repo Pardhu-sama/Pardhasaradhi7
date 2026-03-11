@@ -374,6 +374,306 @@ printf("%d",c);
 return 0;
 }
 
+                                                  //11-03-2026//Wednesday
+
+//To find the biggest among three
+#include<stdio.h>
+int main()
+{
+scanf("%d%d%d",&num1,&num2,&num3);
+if (num1>num2)&&(num1>num3)
+printf("max=",num1);
+}
+else if(num2>num3){
+printf("Max=",num2);
+}
+else{
+printf("Max=",num3);
+}
+return 0;
+}
+
+//to check whether the number is in  the range 01 to 100
+#include<stdio.h>
+int main()
+{
+int num;
+scanf("%d",&num);
+if (num>=1&&num<=100){
+printf("Within range");
+}
+else{
+printf("Not in range");
+}
+return 0;
+}
+
+//To find the character in the range a to z
+#include<stdio.h>
+int main()
+{
+char n;
+scanf("%c",&n);
+if(n>=a&&n<=z){
+printf("Within range");
+}
+else{
+printf("Not in range");
+}
+return 0;
+}
+
+//To increment a value
+#include<stdio.h>
+void main()
+{
+int x,i;
+i=10;
+x=++i;
+printf("x:%d",x);
+printf("i:%d",i);
+}
+
+//conditonal operators 
+#include<stdio.h>
+void main()
+{
+int a=10,b=20;
+int max;
+max=(a>b)?a:b;
+printf("Maximum number=%d\n",max);
+}
+
+//To find the day in a  week    
+#include<stdio.h>
+int main()
+{
+int day;
+scanf("%d",&day);
+switch day;{
+case 1:
+printf("Monday");
+break;
+case 2:
+printf("Tuesday");
+break;
+case 3:
+printf("Wednesday");
+break;
+case 4:
+printf("Thursday");
+break;
+case 5:
+printf("Friday");
+break;
+case 6:
+printf("Saturday");
+break;
+case 7:
+printf("Sunday");
+break;
+default:
+printf("Invalid");
+}
+return 0;
+}
+
+//Program to break statement
+#include<stdio.h>
+int main()
+{
+int i;
+for (i=1;i<=10;i++){
+if (i==5)
+break;
+printf("%d\n",i);
+}
+
+//goto statement
+#include<stdio.h>
+int main()
+{
+int i=1;
+start:
+if(i<=5){
+printf("%d\n",i);
+i++;
+goto start;
+}
+return 0;
+}
+
+//continue statement
+#Finclude<stdio.h>
+int main()
+{
+int i;
+for (i=1;i<=10;i++){
+if (i==5)
+continue:
+printf("%d\n",i);
+}
+return 0;
+}
+
+//To describe one to ten
+#include<stdio.h>
+void main()
+{
+int i=1;
+while(i<=10)
+{
+printf("%d\n",i);
+i++;
+}
+printf("End");
+}
+
+//to describe odd numbers from one to 10
+#include<stdio.h>
+void main()
+{
+int i=1;
+while(i<=10);
+if (i%2==1)
+{
+printf("%d",i);
+i++;
+}
+printf("End");
+}
+
+//to describe even numbers
+#include<stdio.h>
+void main()
+{
+int i=1;
+while(i<=10);
+if (i%2==0){
+printf("%d\n",i);
+i++;
+}
+printf("End");
+}
+
+//To find the first 10 natural numbers
+#include<stdio.h>
+void main()
+{
+int i=1,sum=0;
+while(i<=10)
+{
+sum=sum+i;
+i++;
+}
+printf("Sum=%d\n",sum);
+printf("End");
+}
+
+//To find the sum of odd numbers
+#include<stdio.h>
+void main()
+{
+int i=1,sum=0;
+while(i<=10);
+if(i%2==1)
+{
+sum=sum+i;
+}
+i++;
+printf("Sum=%d\n",sum);
+printf("End");
+}
+
+//To find the sum of even numbers
+#include<stdio.h>
+void main()
+{
+int i=1,sum=0;
+while(i<=10);
+if(i%2==0)
+{
+sum=sum+i;
+}
+i++;
+printf("Sum=%d/n",sum);
+printf("End");
+}
+
+//To find the factorial of a given number
+#include<stdio.h>
+void main()
+{
+int i=1,factorial=1;
+whhile(i<=5)
+{
+factorial=factorial*i;
+i++;
+}
+printf("Factorial = %d/n",factorial);
+printf("End");
+}
+
+//To print the Fibomacci series
+#include<stdio.h>
+void main()
+{
+int i=0,first=0,second=1,next;
+while(i<=10)
+{
+printf("%d/n",first);
+next=first+second;
+first=second;
+second=next;
+i++;
+}
+}
+
+//To print 1 to 10 in reverse order
+#include<stdio.h>
+void main()
+{
+int i=10;
+while (i>=1)
+{
+printf("%d/n",i);
+}
+printf("End");
+}
+
+//To check the number whether it is in the range of 1 to 1000
+#include<stdio.h>
+int main()
+{
+int num;
+scanf("%d",&num);
+if(num>=1&&num<=1000){
+printf("Within range");
+}
+else{
+printf("Not in range");
+}
+return 0;
+}
+
+//To check the number in the range of 1 to 200
+#include<stdio.h>
+int main()
+{
+int num;
+scanf("%d",&num);
+if(num>=1&num<=200){
+printf("Within range");
+}
+else{
+printf("Not in range");
+}
+return 0;
+}
+
+
+
+
 
 
 
