@@ -1051,6 +1051,243 @@ int main()
     return 0;
 }
 
+//To print the given pattern
+#include<stdio.h>
+int main()
+{
+int n,i,j;
+scanf("%d",&n);
+for (i=5;i.=1;i--){
+for (j=1;j<=i;j++){
+printf("*");
+}
+printf("\n");
+}
+return 0;
+}
+
+//To print the given pattern
+#include<stdio.h>
+int main()
+{
+int n,i,j;
+scanf("%d",&n);
+for(i=5;i>=1;i--){
+for(j=1;j<=i;j++){
+printf("%d",j);
+}
+printf("\n");
+}return 0;
+}
+
+//To print the given pattern
+#include<stdio.h>
+int main()
+{
+    int n,i,j;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        for(j=1;j<=i;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    for (i=n-1;i>=1;i--){
+        for(j=1;j<=i;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+    
+
+}
+
+//To print the given pattern
+#include<stdio.h>
+int main()
+{
+    int i,j,s;
+    
+    for(i=1;i<=5;i++){
+        for(s=1;s<=5-i;s++){
+            printf(" ");
+        }
+        for(j=1;j<=i;j++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+//To print the given program
+#include<stdio.h>
+void main()
+{
+    int i,j,n,num;
+    num=1;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        for(j=1;j<=i;j++){
+            printf("%d",num);
+            num++;
+        }
+        printf("\n");
+    }
+}
+
+//To print the given pattern
+#include<stdio.h>
+int main()
+{
+int n,i,j;
+scanf("%d",&n);
+for (i=1;i<=n;i++){
+for (j=1;j<=n-j;j++){
+printf(" ");
+}
+for(j=1;j<=(2*i-1);j++){
+if(i==1||i==n||j==1||j==(2*i-1)){
+printf("*");
+}
+else{
+printf(" ");
+}
+printf(" ");
+}
+printf("\n");
+}
+return 0;
+}
+
+//To print the palindrome number
+#include <stdio.h>
+int main()
+{
+int n, rev = 0, r, temp;
+printf("Enter a number: ");
+scanf("%d", &n);
+temp = n;
+while(n > 0)
+{
+r = n % 10;
+rev = rev * 10 + r;
+n = n / 10;
+}
+if(temp == rev)
+printf("Palindrome number");
+else
+printf("Not a palindrome");
+return 0;
+}
+
+//To find the sum of n natural numbers
+#include<stdio.h>
+void main()
+{
+    int i=1,sum=0;
+    while(i<=10){
+        sum=sum+i;
+        i++;
+    }
+    printf("Sum=%d\n",sum);
+    printf("END");
+}
+
+//To find the LCM of two integers
+#include <stdio.h>
+int main()
+{
+int a, b, max, lcm;
+printf("Enter two numbers: ");
+scanf("%d %d", &a, &b);
+ max = (a > b) ? a : b;
+while(1)
+{
+if(max % a == 0 && max % b == 0)
+ {
+ lcm = max;
+break;
+}
+max++;
+}
+printf("LCM = %d", lcm);
+return 0;
+}
+
+//To find the sum of digits
+#include <stdio.h>
+int main()
+{
+int n, sum = 0, r;
+printf("Enter number: ");
+scanf("%d", &n);
+while(n > 0)
+{
+r = n % 10;
+sum = sum + r;
+n = n / 10;
+}
+printf("Sum of digits = %d", sum);
+return 0;
+}
+
+//To find whether the given number is armstrong ar not
+#include<stdio.h>
+int main()
+{
+int n,r,sum=0,temp;
+scanf("%d",&n);
+temp=n;
+while(n>0){
+r=n%10;
+sum=sum+(r*r*r);
+n=n/10;
+}
+if sum==temp;{
+printf("Armstrong number");
+}
+else{
+printf("Not");
+}
+
+//To reverse the number
+#include <stdio.h>
+int main()
+{
+int n, rev = 0, r;
+printf("Enter a number: ");
+scanf("%d", &n);
+while(n > 0)
+{
+ r = n % 10;
+rev = rev * 10 + r;
+n = n / 10;
+}
+printf("Reversed number = %d", rev);
+return 0;
+}
+
+//To find the fibonacci series
+#include <stdio.h>
+int main()
+{
+int n, a = 0, b = 1, c, i;
+printf("Enter number of terms: ");
+ scanf("%d", &n);
+printf("Fibonacci Series:\n");
+for(i = 1; i <= n; i++)
+{
+printf("%d ", a);
+c = a + b;
+a = b;
+b = c;
+}
+return 0;
+}
+
+
 
 
 
