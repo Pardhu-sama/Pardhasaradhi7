@@ -1596,7 +1596,7 @@ printf("%d occurs %d times\n",a[i],count);
 }
 }
 
-//To find the 
+
 
 
 
