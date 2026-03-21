@@ -2058,6 +2058,38 @@ scanf("%d", &num);
 printf("Sum of digits = %d", sum_of_digits(num));
 return 0;
 }
+                                 //20-03-26//Friday
+
+//To find the square root and power of a number using functions
+#include<stdio.h>
+int <math.h>
+int main()
+{
+float num,root,P;
+printf("Enter a number: ");
+scanf("%f",&num);
+root=sqrt(num);
+P=pow(2,3);
+printf("square root=%.2f",root);
+printf("Power=%.2f",P);
+return 0;
+}
+
+//User defined function
+#include<stdio.h>
+int functionname(int,int);
+int main()
+{
+y=functionname(a,b);
+return 0;
+}
+int functionname(inta,intb){
+return x;
+}
+
+
+
+
 
 
 
