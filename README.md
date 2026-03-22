@@ -2058,7 +2058,7 @@ scanf("%d", &num);
 printf("Sum of digits = %d", sum_of_digits(num));
 return 0;
 }
-                                 //20-03-26//Friday
+                                 //19-03-26//Friday
 
 //To find the square root and power of a number using functions
 #include<stdio.h>
