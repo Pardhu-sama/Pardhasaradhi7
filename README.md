@@ -2087,6 +2087,151 @@ int functionname(inta,intb){
 return x;
 }
 
+//To find the factorial using fuction
+#include<stdio.h>
+void fact(int a);
+int main()
+{
+int n;
+scanf("%d",&n);
+fact(n);
+return 0;
+}
+void fact(int a )
+{
+int i,fact=1;
+for(i=0;i<=n;i++){
+fact=fact*i;
+}
+printf(Factorial=%d",fact);
+}
+
+//To find the numebt is odd or even using function
+#include<stdio.h>
+void Ans(int a);
+int main()
+{
+int n;
+scanf("%d",&n);
+Ans(n);
+return 0;
+}
+void Ans(int a){
+if(n%2==0){
+printf("Even");
+}
+else{
+printf("Odd");
+}
+}
+
+//To find the sum of n natural numbers using function
+#include<stdio.h>
+void add(int n);
+int main()
+{
+int n;
+scanf("%d",&n);
+add(n);
+return 0;
+}
+void add(int n){
+int i=1,sum=0;
+while(i<=n){
+sum=sum+i;
+}
+printf(Sum =%d",sum);
+}
+
+//To find the sum of two digits using fuction
+#include<stdio.h>
+int add(int a. int b);
+int main()
+{
+int n1,n2,sum;
+scanf("%d%d",&n1,&n2);
+sum=add(n1,n2);
+printf("Sum=%d",sum);
+return 0;
+}
+int add(int a, int b){
+int sum;
+sum=a+b;
+return sum;
+}
+
+//To add two digits by void fuction
+#include<stdio.h>
+void add(int a, int b);
+int main()
+{
+int n1,n2,sum;
+scanf("%d%d",&n1,&n2);
+add(n1,n2);
+return 0;
+}
+void add(int a, int b){
+int sum;
+sum=a+b;
+printf("Sum=%d",sum);
+}
+
+//To find the area of circle using function
+#include<stdio.h>
+int mul(int r);
+int main()
+{
+int r;
+scanf("%d",&r);
+area=mul(r);
+printf("Area=%d",area);
+return 0;
+}
+int mul(int r)
+{
+int area;
+area=0.5*r*r;
+return area;
+}
+
+//To find the simple interest using function
+#include,stdio.h>
+int add(int P, int T, int R);
+int main()
+{
+float P,T,R,result;
+scanf("%f%f%f",&P,&T,&R);
+result=add(P,T,R);
+printf("SI=%.2f",result);
+return 0;
+}
+int add(Int P, int T, int R){
+float result;
+result=(P*T*R)/100;
+return result;
+}
+
+//To find the area of the triangle using functions
+#include<stdio.h>
+void add(int i, int j);
+int main()
+{
+int b,h;
+scanf("%f%f",&b,&h);
+add(b,h);
+return 0;
+}
+void add(int i, int j){
+int area,b,h;
+area=0.5*b*h;
+printf("Area=%.2f",area);
+}
+
+
+
+
+
+
 
 
 
