@@ -2291,13 +2291,140 @@ printf("Not");
 }
 }
 
+//To display the array elements using fuctions
+#include<stdio.h>
+void displayarray(int arr[], int size);
+int main()
+{
+int arr[5]={10,20,30,40,50};
+int size=5;
+displayarray(arr, size);
+return 0;
+}
+void displayarray(int arr[],int size){
+int i;
+for(i=0;i<size;i++){
+printf("%d",arr[i]);
+printf("\n");
+}
+}
 
+//To display the array elements in reverse order
+#include<stdio.h>
+void displayarray(int arr[], int size);
+int main()
+{
+int arr[5]={10,20,30,40,50};
+int size=5;
+displayarray(arr,size);
+return 0;
+}
+void displayarray(int arr[], int size){
+int i;
+for(i=size-1;i>=0;i--){
+printf("%d",arr[i]);
+printf("\n");
+}
+}
 
-                                 
+//To find the sum of arrays
+#include<stdio.h>
+void sum(int arr[],int size);
+int main()
+{
+int arr{5}={1,2,3,45,5);
+int size=5;
+sum(arr,size);
+return 0;
+}
+void sum(int arr[],int size){
+int i, sum=0;
+for(i=0;i<size;i++){
+sum=sum+arr[i];
+}
+printf("Sum=%d",sum);
+}
 
+//To verify the given number is prime or not using function
+#include <stdio.h>
+int isPrime(int n) {
+int i;
+if(n <= 1) return 0;
+for(i = 2; i <= n/2; i++) {
+if(n % i == 0)
+return 0;
+}
+return 1;
+}
+int main() {
+int num = 7;
+if(isPrime(num))
+printf("Prime");
+else
+printf("Not Prime");
+return 0;
+}
 
+//To find the max value in the given set using functions
+#include <stdio.h>
+int findMax(int arr[], int size) {
+int i, max = arr[0];
+for(i = 1; i < size; i++) {
+if(arr[i] > max)
+max = arr[i];
+}
+return max;
+}
+int main() {
+int arr[] = {2, 8, 1, 5};
+printf("Max = %d", findMax(arr, 4));
+return 0;
+}
 
+//To swap two numbers using functions
+#include <stdio.h>
+void swap(int a, int b) {
+int temp = a;
+a = b;
+b = temp;
+printf("Inside function: a=%d b=%d\n", a, b);
+}
+int main() {
+int x = 2, y = 3;
+swap(x, y);
+printf("Outside function: x=%d y=%d", x, y);
+return 0;
+}
 
+//To find the fibonacci series using functions
+#include <stdio.h>
+void fibonacci(int n) {
+int a = 0, b = 1, c, i;
+for(i = 0; i < n; i++) {
+printf("%d ", a);
+c = a + b;
+a = b;
+b = c;
+}
+}
+int main() {
+fibonacci(5);
+return 0;
+}
+
+//Fuction to swap two numbers using pointers
+#include <stdio.h>
+void swap(int *a, int *b) {
+int temp = *a;
+*a = *b;
+*b = temp;
+}
+int main() {
+int x = 2, y = 3;
+swap(&x, &y);
+printf("After swap: x=%d y=%d", x, y);
+return 0;
+}
 
 
 
