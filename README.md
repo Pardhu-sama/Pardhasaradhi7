@@ -2228,6 +2228,73 @@ printf("Area=%.2f",area);
 }
 
 
+                                 //20-03-2026//Friday
+
+//To print the multiplication table using fuctions
+#include<stdio.h>
+void mul(int n);
+int main()
+{
+int a;
+scanf("%d",&a);
+mul(a);
+return 0;
+}
+void mul(int n){
+int i,result;
+for(i=1;i<=10;i++){
+result=n*i;
+printf("%dX%d=%d\n",n,i,result);
+}
+}
+
+//To find the perimeter of the rectangle by using functions
+#include<stdio.h>
+int per(int l, intb);
+int main()
+{
+int l,b,result;
+scanf("%d%d",&l,&b);
+result=per(l,b);
+printf("Perimeter=%d",result);
+return 0;
+}
+int per(int l, int b){
+int per;
+per=2*(l+b);
+return per;
+}
+
+//To find the whetertr the given number is palindrome or not using fuctions
+#include<stdio.h>
+void pal(int n)
+int main()
+{
+int a;
+scanf("%d",&a);
+pal(a);
+return 0;
+}
+void pal(int n){
+int sum,reverse=0;
+sum=n;
+while(sum!=0){
+int digit=sum%10;
+reverse=reverse*10+digit;
+sum=sum/10;
+}
+if (n==reverse){
+printf("Pal");
+}
+else{
+printf("Not");
+}
+}
+
+
+
+                                 
+
 
 
 
