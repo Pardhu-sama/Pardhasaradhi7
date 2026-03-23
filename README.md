@@ -2426,6 +2426,220 @@ printf("After swap: x=%d y=%d", x, y);
 return 0;
 }
 
+                                        //17-03-2026//Tuesday
+
+//To find the squares of first ten numbers
+#include<stdio.h>
+int main()
+{
+int i,square;
+for(i=0;i<=10;i++){
+square=i*i;
+if(square>=50){
+continue;
+}
+printf("Square of %d=%d\n",i,square);
+return 0;
+}
+
+//To find the given numebr is prime number or not
+#include<stdio.h>
+void main()
+{
+int num,i,isPrime=1;
+printf("Enter the number: ");
+scanf("%d",&num);
+if(num<=1){
+isPrime=0;
+}
+else{
+for(i=2;i<=num/2;i++){
+if (num%i==0){
+isPrime=0;
+break;
+}
+}
+}
+if(isPrime)
+printf("%d is a prime number:\n",num);
+else
+printf("%d is not a prime number);
+}
+
+//To find the given set of numbers is a prime or not
+#include<stdio.h>
+int main()
+{
+int num,i,j,isprime;
+printf("Enter the number: ");
+scanf("%d",&num);
+printf("Prime numbers upto %d are:\n",num);
+for(i=2;i<=num;i++){
+isprime=1;
+for(j=2;j<=i/2;j++){
+if(i%j==0){
+isprime=0;
+break;
+}
+}
+}
+if (isprime){
+printf("%d is a prime number:\n",i);
+}
+}
+
+//to print the pattern
+#include<stdio.h>
+int main()
+{
+int n,i,j;
+scanf("%d",&n);
+for(i=1;i<=5;i++){
+for(j=1;j<=5;j++){
+printf("*");
+}
+printf('\n');
+}
+return 0;
+}
+
+//To print the hollow pattern
+#include<stdio.h>
+int main()
+{
+int n,i,j;
+scanf("%d",&n);
+for(i=1;i<=n;i++){
+for(j=1;j<=n;j++){
+if(i==1||i==n||j==1||j==n){
+printf("*");
+}
+else{
+printf(" ");
+}
+}
+printf("\n");
+}
+return 0;
+}
+
+//To print the given pattern
+#inlcude<stdio.h>
+int main()
+{
+int n,i,j;
+scanf("%d",&n);
+for(i=1;i<=5;i++){
+for(j=1;j<=5;j++){
+printf("*");
+}
+printf("\n");
+}
+return 0;
+}
+
+//To print given pattern
+#include<stdio.h>
+int main()
+{
+int n,i,j;
+for(i=1;i<=4;i++){
+for(j=1;j<=i;j++){
+printf("%d",i);
+}
+printf("\n");
+}
+return 0;
+}
+
+//To print the given pattern
+#include<stdio.h>
+int main()
+{
+int n,i,j;
+scanf("%d",&n);
+for(i=1;i<=5;i++){
+for(j=1;j<=i;j++){
+printf("%d",j);
+}
+printf("\n");
+}
+return 0;
+}
+
+//To print the given pattern
+#inlcude<stdio.h>
+int main()
+{
+int n,i,j;
+scsanf("%d",&n);
+for(i=5;i>=1;i--){
+for(j=1;j<=i;j++){
+printf("*");
+}
+printf("\n");
+}
+return 0;
+}
+
+//To print the given pattern
+#include<stdio.h>
+int main()
+{
+int n,i,j;
+scanf("%d",&n);
+for(i=5;i>=1;i--){
+for(j=1;j<=i;j++){
+printf("%d",j);
+}
+printf("\n");
+}
+return 0;
+}
+
+//To print the given pattern
+#include<stdio.h>
+int main()
+{
+int n,i,j;
+scanf("%d",&n);
+for(i=1;i<=n;i++){
+for(j=1;j<=i;j++){
+printf("*");
+}
+printf("\n");
+}
+for(i=n-1;j>=1;i--){
+for(j=1;j<=1;j++){
+printf("*");
+}
+printf("/n");
+}
+return 0;
+}
+
+//To print the given pattern
+#inlcude<stdio.h>
+int main()
+{
+int n,i,j;
+for(i=1;i<=5;i++){
+for(int s=1;s<=5-i;s++){
+printf(" ");
+}
+for(j=1;j<=i;j++){
+printf("*");
+}
+printf("\n");
+}
+return 0;
+}
+
+
+
+
+
+
 
 
 
